@@ -71,3 +71,8 @@ void MainWindow::on_pushButtonArea_clicked()
     //La mostramos
     ui->labelArea->setText(sArea);
 }
+
+void MainWindow::on_pushButtonExit_clicked()
+{
+    delete ui;
+}

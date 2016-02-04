@@ -30,6 +30,8 @@ private slots:
 
     void on_pushButtonArea_clicked();
 
+    void on_pushButtonExit_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
