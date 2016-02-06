@@ -14,10 +14,10 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    rectangulowindow.cpp
+    barraswindow.cpp
 
 HEADERS  += mainwindow.h \
-    rectangulowindow.h
+    barraswindow.h
 
 FORMS    += mainwindow.ui \
-    rectangulowindow.ui
+    barraswindow.ui

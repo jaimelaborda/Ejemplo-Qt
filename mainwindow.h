@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include "barraswindow.h"
 namespace Ui {
 class MainWindow;
 }
@@ -34,6 +34,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    //RectanguloWindow *newwindows;     //Creamos la clase de la nueva ventana
 };
 
 #endif // MAINWINDOW_H

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>MainWindow - Ejemplo Qt</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QPushButton" name="pushButton">
@@ -121,12 +121,12 @@
      <rect>
       <x>40</x>
       <y>30</y>
-      <width>75</width>
+      <width>81</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>Rectangulo</string>
+     <string>Cambiar barra</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonArea">

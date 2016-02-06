@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "barraswindow.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -7,6 +8,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 }
+
 
 MainWindow::~MainWindow()
 {
@@ -48,8 +50,14 @@ void MainWindow::on_pushButton_5_clicked()
 
 void MainWindow::on_pushButton_6_clicked()
 {
-    //RectanguloWindow w;
-    //w.show();
+    //MODE APROACH -> No deja ir a mainWindows hasta que no cerremos(Dialogo)
+    BarrasWindow newwindow;      //Creamos el objeto de la nueva windows
+    newwindow.setModal(true);       //Set Modal Mode
+    newwindow.exec();               //Ejecuta y muestra
+
+    //MODELESS APROACH -> Deja ir a mainWindoes y tener ambas abiertas
+    //newwindows = new RectanguloWindow(this);    //Creamos el objeto de la clase declarada en mainWindows.h
+    //newwindows->show();                         //Llamos a Show()
 
 }
 
@@ -74,5 +82,5 @@ void MainWindow::on_pushButtonArea_clicked()
 
 void MainWindow::on_pushButtonExit_clicked()
 {
-    delete ui;
+    this->close();      //Cierra la ventana donde actualmente estás
 }
